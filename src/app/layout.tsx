@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Chenliang Tian - PhD Student in Computer Science at WashU",
-    template: "%s | Chenliang Tian"
+    default: "Chenliang (Momo) Tian - PhD Student in Computer Science at WashU",
+    template: "%s | Chenliang (Momo) Tian"
   },
   description: "Chenliang Tian is a PhD student in Computer Science & Engineering at Washington University in St. Louis, researching quantum networking and cyber-physical systems security.",
   keywords: [
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://chenliangtian.github.io',
-    title: 'Chenliang Tian - PhD Student in Computer Science at WashU',
+    title: 'Chenliang (Momo) Tian - PhD Student in Computer Science at WashU',
     description: 'PhD student researching quantum networking and cyber-physical systems security at Washington University in St. Louis.',
     siteName: 'Chenliang Tian',
     images: [
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Chenliang Tian - PhD Student in Computer Science',
+    title: 'Chenliang (Momo) Tian - PhD Student in Computer Science',
     description: 'PhD student researching quantum networking and cyber-physical systems security.',
     images: ['/images/citations.jpeg'],
   },
@@ -112,7 +112,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              name: "Chenliang Tian",
+              name: "Chenliang (Momo) Tian",
               alternateName: "Momo Tian",
               url: "https://chenliangtian.github.io",
               image: "https://chenliangtian.github.io/images/citations.jpeg",
@@ -141,7 +141,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`} suppressHydrationWarning={true}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
