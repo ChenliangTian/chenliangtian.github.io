@@ -12,17 +12,32 @@ interface LogPageProps {
 }
 
 export async function generateStaticParams() {
-  const slugs = getPostSlugs('logs');
-  return slugs.map((slug) => ({
-    slug: slug.replace(/\.mdx?$/, ''),
-  }));
+  const logSlugs = getPostSlugs('logs');
+  const blogSlugs = getPostSlugs('blog');
+
+  return [
+    ...logSlugs.map((slug) => ({
+      slug: slug.replace(/\.mdx?$/, ''),
+    })),
+    ...blogSlugs.map((slug) => ({
+      slug: slug.replace(/\.mdx?$/, ''),
+    })),
+  ];
 }
 
 export default function LogPage({ params }: LogPageProps) {
   const { slug } = params;
-  
+
   try {
-    const { content, metadata } = getPostBySlug('logs', slug);
+    // Try to get post from blog first, then logs
+    let post;
+    try {
+      post = getPostBySlug('blog', slug);
+    } catch {
+      post = getPostBySlug('logs', slug);
+    }
+
+    const { content, metadata } = post;
 
     return (
       <div className="min-h-screen bg-white dark:bg-black">
