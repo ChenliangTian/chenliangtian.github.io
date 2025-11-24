@@ -74,7 +74,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'your-google-verification-code', // You'll need to add this after setting up Google Search Console
+    google: 'aJLEfIffn_p_fxpRqb3XoEvbovNKbWcVx8uQb720USI',
   },
 };
 
