@@ -15,7 +15,7 @@ export function Hero() {
             </div>
 
             <h1 className="mb-4 md:mb-6 font-heading text-3xl font-bold leading-tight text-brown dark:text-cream sm:text-4xl md:text-5xl lg:text-6xl">
-              I'm Chenliang —
+              I'm Chenliang (Momo) —
             </h1>
 
             <p className="mb-6 md:mb-8 max-w-xl text-base md:text-lg font-medium leading-relaxed text-brown/80 dark:text-cream/80 text-justify">
