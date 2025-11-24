@@ -25,8 +25,8 @@ export async function generateStaticParams() {
   ];
 }
 
-export default function LogPage({ params }: LogPageProps) {
-  const { slug } = params;
+export default async function LogPage({ params }: LogPageProps) {
+  const { slug } = await params;
 
   try {
     // Try to get post from blog first, then logs
