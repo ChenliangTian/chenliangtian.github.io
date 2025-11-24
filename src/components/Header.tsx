@@ -17,7 +17,7 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-cream/90 backdrop-blur-sm dark:bg-brown/90 transition-colors duration-300">
+    <header suppressHydrationWarning={true} className="sticky top-0 z-50 w-full bg-cream/90 backdrop-blur-sm dark:bg-brown/90 transition-colors duration-300">
       <div className="container mx-auto flex h-16 md:h-20 items-center justify-between px-4">
         {/* Logo */}
         <Link
@@ -50,6 +50,7 @@ export function Header() {
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="rounded-md p-2 text-brown dark:text-cream hover:bg-brown/10 dark:hover:bg-cream/10 transition-colors"
             aria-label="Toggle menu"
+            suppressHydrationWarning={true}
           >
             {mobileMenuOpen ? (
               <X className="h-6 w-6" />
