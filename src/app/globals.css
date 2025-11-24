@@ -1,22 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..900&family=Quicksand:wght@300..700&display=swap');
 @import "tailwindcss";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-heading: 'Fraunces', serif;
+    --font-body: 'Quicksand', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-body), system-ui, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading), serif;
+  }
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FFF8E7;
+  /* Cream */
+  --foreground: #4A3B32;
+  /* Dark Brown */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
+
+  --color-cream: #FFF8E7;
+  --color-brown: #4A3B32;
+  --color-brown-light: #8D7B68;
+  --color-pastel-pink: #FF9966;
+  --color-pastel-blue: #AEC6CF;
+  --color-pastel-yellow: #FDE68A;
+
+  --color-cps: #4A3B32;
+  --color-cps-accent: #FF9966;
+  /* Pink for CPS */
+  --color-cps-light: #FFF0F0;
+
+  --color-quantum: #4A3B32;
+  --color-quantum-accent: #AEC6CF;
+  /* Blue for Quantum */
+  --color-quantum-light: #F0F8FF;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@custom-variant dark (&:where(.dark, .dark *));
+
+.dark {
+  --background: #2D2420;
+  /* Deep Warm Grey */
+  --foreground: #FDF6E3;
+  /* Soft Cream */
 }
 
 body {
