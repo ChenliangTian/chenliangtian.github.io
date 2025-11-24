@@ -4,14 +4,12 @@ import { getAllPosts } from "@/lib/mdx";
 import Link from "next/link";
 import { format, parseISO } from "date-fns";
 
-// Sample photos for the grid
+// Campus photos
 const photos = [
-  { src: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?w=800&q=80", alt: "Mountain Landscape", height: 66 },
-  { src: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800&q=80", alt: "Camera Lens", height: 100 },
-  { src: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=80", alt: "Foggy Forest", height: 75 },
-  { src: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=80", alt: "Travel", height: 120 },
-  { src: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&q=80", alt: "Lake View", height: 60 },
-  { src: "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=800&q=80", alt: "Nature", height: 80 },
+  { src: "/images/photo1.jpg", alt: "Campus at Dusk", height: 75 },
+  { src: "/images/photo2.jpg", alt: "Washington University Building", height: 80 },
+  { src: "/images/photo3.jpg", alt: "Cherry Blossoms on Campus", height: 100 },
+  { src: "/images/photo4.jpg", alt: "Campus Tower", height: 90 },
 ];
 
 export default function LifePage() {
@@ -21,7 +19,7 @@ export default function LifePage() {
     <div className="min-h-screen bg-white dark:bg-black">
       <Header />
       <main className="container mx-auto px-4 py-12">
-        
+
         {/* Blog Section */}
         <section className="mb-20">
           <h1 className="mb-8 text-4xl font-serif font-bold tracking-tight text-gray-900 dark:text-white">
