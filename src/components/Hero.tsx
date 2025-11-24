@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export function Hero() {
   return (
-    <div className="flex flex-col gap-12 py-10 md:py-20">
+    <div className="flex flex-col gap-12 py-10 md:py-20" suppressHydrationWarning={true}>
       {/* Profile & Intro Section */}
       <section className="container mx-auto px-4">
         <div className="flex flex-col-reverse items-center justify-between gap-12 md:flex-row">

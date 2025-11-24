@@ -53,9 +53,9 @@ export function Header() {
             suppressHydrationWarning={true}
           >
             {mobileMenuOpen ? (
-              <X className="h-6 w-6" />
+              <X className="h-6 w-6" suppressHydrationWarning={true} />
             ) : (
-              <Menu className="h-6 w-6" />
+              <Menu className="h-6 w-6" suppressHydrationWarning={true} />
             )}
           </button>
         </div>
