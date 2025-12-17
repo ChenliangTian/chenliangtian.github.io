@@ -138,6 +138,18 @@ export default function RootLayout({
             })
           }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "Chenliang Tian",
+              "alternateName": ["Chenliang Tian's PhD Page", "Chenliang's Log"],
+              "url": "https://chenliangtian.github.io/"
+            })
+          }}
+        />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`} suppressHydrationWarning={true}>
         <ThemeProvider
