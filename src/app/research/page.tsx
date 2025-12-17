@@ -1,22 +1,7 @@
 import { Header } from "@/components/Header";
 import { ResearchCard } from "@/components/ResearchCard";
 
-const cpsProjects = [
-  {
-    title: "Time-Aware Intrusion Detection",
-    description: "Developing a novel IDS that utilizes precise timing analysis to detect anomalies in industrial control systems.",
-    tags: ["CPS", "Security", "Time-Series"],
-    link: "#",
-    image: "/images/time-intrusion-detection.png",
-  },
-  {
-    title: "Clock Skew Fingerprinting",
-    description: "Identifying devices on a network based on microscopic variations in their internal clock frequencies.",
-    tags: ["Hardware", "Fingerprinting"],
-    link: "#",
-    image: "/images/clock-skew-fingerprint.png",
-  },
-];
+
 
 const quantumProjects = [
   {
@@ -49,20 +34,7 @@ export default function ResearchPage() {
           </p>
         </div>
 
-        <section id="cps" className="mb-20">
-          <div className="mb-8 flex items-center gap-4">
-            <div className="h-px flex-1 bg-gray-200 dark:bg-gray-800"></div>
-            <h2 className="text-2xl font-bold text-cps dark:text-cps-accent">
-              CPS Security
-            </h2>
-            <div className="h-px flex-1 bg-gray-200 dark:bg-gray-800"></div>
-          </div>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {cpsProjects.map((project) => (
-              <ResearchCard key={project.title} {...project} type="cps" />
-            ))}
-          </div>
-        </section>
+
 
         <section id="quantum">
           <div className="mb-8 flex items-center gap-4">

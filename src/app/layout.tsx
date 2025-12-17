@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     default: "Chenliang (Momo) Tian - PhD Student in Computer Science at WashU",
     template: "%s | Chenliang (Momo) Tian"
   },
-  description: "Chenliang Tian is a PhD student in Computer Science & Engineering at Washington University in St. Louis, researching quantum networking and cyber-physical systems security.",
+  description: "Chenliang Tian is a PhD student in Computer Science & Engineering at Washington University in St. Louis, researching quantum networking.",
   keywords: [
     "Chenliang Tian",
     "Chenliang",
@@ -28,7 +28,6 @@ export const metadata: Metadata = {
     "PhD student",
     "Computer Science",
     "Quantum Networking",
-    "Cyber-Physical Systems",
     "Network Security",
     "Quantum Computing",
     "Research",
@@ -64,7 +63,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://chenliangtian.github.io',
     title: 'Chenliang (Momo) Tian - PhD Student in Computer Science at WashU',
-    description: 'PhD student researching quantum networking and cyber-physical systems security at Washington University in St. Louis.',
+    description: 'PhD student researching quantum networking at Washington University in St. Louis.',
     siteName: 'Chenliang Tian',
     images: [
       {
@@ -78,7 +77,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Chenliang (Momo) Tian - PhD Student in Computer Science',
-    description: 'PhD student researching quantum networking and cyber-physical systems security.',
+    description: 'PhD student researching quantum networking.',
     images: ['/images/citations.jpeg'],
   },
   robots: {
@@ -128,7 +127,6 @@ export default function RootLayout({
               },
               knowsAbout: [
                 "Quantum Networking",
-                "Cyber-Physical Systems",
                 "Network Security",
                 "Computer Science",
                 "Quantum Computing"
